@@ -1,0 +1,40 @@
+.view-img-header{
+  position: relative;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.bcrumb {
+  position: absolute;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  top: 50%;
+  }
+  .bcrumb ol{
+    list-style: none;
+  } 
+  .bcrumb li{
+    float: left;
+  }
+  .bcrumb li i{
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .bcrumb li a{
+    color: #ffffff;
+  }
+  .bcrumb li a:hover{
+    text-decoration: none;
+  }
+  @media (max-width: 767px){
+    .view-img-header img{
+      min-height: 100px;
+    }
+  }
+.content-category{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section{
+  margin-bottom: 30px;
+}

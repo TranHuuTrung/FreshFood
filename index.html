@@ -16,13 +16,105 @@
 <body>
     <header class="container-fluid nav-header">
      <!-- includes header by js from snippets/header -->
+        <div class="container">
+            <nav role="navigation" class="row">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header col-md-2">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-header-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-navicon "></span>
+                    </button>
+                    <a href="/">
+                    <img class="img-responsive" src="./assets/images/logo.png" alt="FreshFood">
+                    </a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-header-collapse col-md-8 col-md-push-2">
+                    <ul class="nav navbar-nav main-menu-header">
+                        <li class="active"><a href="#">TRANG CHỦ</a></li>
+                        <li><a href="#">THỊT TƯƠI</a></li>
+                        <li><a href="#">SAU SẠCH</a></li>
+                        <li><a href="#">QUẢ NGỌT</a></li>
+                        <li><a href="#">CẨM NANG</a></li>
+                        <li><a href="#">LIÊN HỆ</a></li>
+                        <li><a href="#">THANH TOÁN</a></li>
+                        <li class="cart">
+                            <a href="#">
+                                <i class="fa fa-cart-plus"></i>
+                                <span class="badge cart-number">5</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+            
+        </div>
     </header>
     <div class="slider sliderHeader">
-    <!-- includes silder by js from snippets/slider -->
+         <!-- includes silder by js from snippets/slider -->
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div id="carousel-id" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+                        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+                        <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item">
+                            <img class="img-responsive" width="100%" src="./assets/images/slider.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" width="100%" src="./assets/images/slider.png" alt="">
+                        </div>
+                        <div class="item active">
+                            <img class="img-responsive" width="100%" src="./assets/images/slider.png" alt="">
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                    
+            </div>
+        </div>
     </div>
     <div class="content">
         <div class="container category">
            <!-- includes category by js from snippets/category -->
+           <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 sub-category">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-push-3">
+                        <a href="category-product.html">
+                            <div class="info">
+                                <p>THỰC PHẨM</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img src="./assets/images/category1.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 sub-category">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-push-3">
+                        <a href="category-product.html">
+                            <div class="info">
+                                <p>RAU SẠCH</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img src="./assets/images/category2.png" alt="" class="img-responsive">
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 sub-category">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-push-3">
+                        <a href="category-product.html">
+                            <div class="info">
+                                <p>TRÁI CÂY</p>
+                            </div>
+                        </a>
+                    </div>
+                    <img src="./assets/images/category3.png" alt="" class="img-responsive">
+                </div>
+            </div>
         </div> <!-- end category -->
         <div class="container-fluid new-product">
             <div class="container multiple-items">
@@ -38,9 +130,9 @@
                                     <img src="./assets/images/item4.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="panel-footer text-center">
-                                    <h4>Xà lách Lâm Đồng</h4>
+                                    <a href="detail-product.html"><h4>Xà lách Lâm Đồng</h4></a>
                                     <h5>25.0000đ</h5>
-                                    <a href="#">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="add-to-cart">Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -50,9 +142,9 @@
                                     <img src="./assets/images/item3.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="panel-footer text-center">
-                                    <h4>Dẻ sường bò Úc</h4>
+                                    <a href="detail-product.html"><h4>Dẻ sường bò Úc</h4></a>
                                     <h5>250.0000đ</h5>
-                                    <a href="#">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="add-to-cart">Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -62,9 +154,9 @@
                                     <img src="./assets/images/item2.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="panel-footer text-center">
-                                    <h4>Nho đen Mỹ</h4>
+                                    <a href="detail-product.html"><h4>Nho đen Mỹ</h4></a>
                                     <h5>100.0000đ</h5>
-                                    <a href="#">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="add-to-cart">Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -74,9 +166,9 @@
                                     <img src="./assets/images/item1.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="panel-footer text-center">
-                                    <h4>Ngao trắng</h4>
+                                    <a href="detail-product.html"><h4>Ngao trắng</h4></a>
                                     <h5>75.0000đ</h5>
-                                    <a href="#">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="add-to-cart">Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -86,9 +178,9 @@
                                     <img src="./assets/images/item4.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="panel-footer text-center">
-                                    <h4>Xà lách Lâm Đồng</h4>
+                                    <a href="detail-product.html"><h4>Xà lách Lâm Đồng</h4></a>
                                     <h5>25.0000đ</h5>
-                                    <a href="#">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="add-to-cart">Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -98,9 +190,9 @@
                                     <img src="./assets/images/item2.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="panel-footer text-center">
-                                    <h4>Rau xanh Nghệ An</h4>
+                                    <a href="detail-product.html"><h4>Rau xanh Nghệ An</h4></a>
                                     <h5>35.0000đ</h5>
-                                    <a href="#">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="add-to-cart">Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -110,9 +202,9 @@
                                     <img src="./assets/images/item3.png" alt="" class="img-responsive">
                                 </div>
                                 <div class="panel-footer text-center">
-                                    <h4>Cà rốt Đà Lạt</h4>
+                                    <a href="detail-product.html"><h4>Cà rốt Đà Lạt</h4></a>
                                     <h5>20.0000đ</h5>
-                                    <a href="#">Thêm vào giỏ hàng</a>
+                                    <a href="#" class="add-to-cart">Thêm vào giỏ hàng</a>
                                 </div>
                             </div>
                         </div>
@@ -120,11 +212,151 @@
             </div>
         </div><!-- end new-product -->
         <div class="container-fluid handbook">
-          <!-- includes handbook by js from snippets/handbook -->
+            <!-- includes handbook by js from snippets/handbook -->
+            <div class="container multiple-items">
+                <div class="section-title text-center">
+                    <p>CẨM NANG NẤU ĂN</p>
+                    <img src="./assets/images/hanbook-icon.png" alt="">
+                </div>
+                
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="row wp-item-handbook">
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="./assets/images/handle1.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                    <h4>Thịt bò hầm nấm</h4>
+                                    <p>Món thịt bò hầm nấm kiểu Pháp sẽ mang đến cho các bạn một cái nhìn mới,
+                                        một hương vị mới về món thịt bò hầm truyền thống. Thịt bò mềm, thơm, được 
+                                        chiên vàng ăn cùng rau củ ngọt đậm đà lại vàng thơm. Các bạn hãy ăn kèm món ăn này 
+                                        với cơm nóng hay bánh mì để có một bữa ăn hoàn hảo nhé.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="row wp-item-handbook">
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="./assets/images/handle2.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <h4>Dạ dày trộn cay</h4>
+                                <p>Dạ dày trộn cay rất hay được lòng các ông xã và những ai thích ngồi
+                                        nhâm nhi bởi độ dai, giòn của nó.Các bạn hãy ăn kèm món ăn này 
+                                        với cơm nóng hay bánh mì để có một bữa ăn hoàn hảo nhé. .....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="row wp-item-handbook">
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <img src="./assets/images/handle3.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <h4>Bí quyết nấu ăn ngon</h4>
+                                <p>Dạ dày trộn cay rất hay được lòng các ông xã và những ai thích ngồi
+                                        nhâm nhi bởi độ dai, giòn của nó.Các bạn hãy ăn kèm món ăn này 
+                                        với cơm nóng hay bánh mì để có một bữa ăn hoàn hảo nhé. .....
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="row wp-item-handbook">
+                                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                    <img src="./assets/images/handle1.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                        <h4>Thịt bò hầm nấm</h4>
+                                        <p>Món thịt bò hầm nấm kiểu Pháp sẽ mang đến cho các bạn một cái nhìn mới,
+                                           một hương vị mới về món thịt bò hầm truyền thống. Thịt bò mềm, thơm, được 
+                                           chiên vàng ăn cùng rau củ ngọt đậm đà lại vàng thơm. Các bạn hãy ăn kèm món ăn này 
+                                           với cơm nóng hay bánh mì để có một bữa ăn hoàn hảo nhé.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="row wp-item-handbook">
+                                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                    <img src="./assets/images/handle2.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                    <h4>Dạ dày trộn cay</h4>
+                                    <p>Dạ dày trộn cay rất hay được lòng các ông xã và những ai thích ngồi
+                                            nhâm nhi bởi độ dai, giòn của nó.Các bạn hãy ăn kèm món ăn này 
+                                            với cơm nóng hay bánh mì để có một bữa ăn hoàn hảo nhé. .....
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <div class="row wp-item-handbook">
+                                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                    <img src="./assets/images/handle3.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                    <h4>Bí quyết nấu ăn ngon</h4>
+                                    <p>Dạ dày trộn cay rất hay được lòng các ông xã và những ai thích ngồi
+                                            nhâm nhi bởi độ dai, giòn của nó.Các bạn hãy ăn kèm món ăn này 
+                                            với cơm nóng hay bánh mì để có một bữa ăn hoàn hảo nhé. .....
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+            </div>
         </div>
     </div>
     <footer class="footer">
-         <!-- includes footer by js from snippets/footer -->
+        <!-- includes footer by js from snippets/footer -->
+        <div class="top-footer container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 block-footer">
+                        <h4>Trụ sở chính:</h4>
+                        <ul>
+                            <li>34 Âu Cơ, Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng,Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng</li>
+                            <li>Điện thoại: 0966 581 498</li>
+                            <li>Gmail: tranhuutrung1408@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 block-footer">
+                        <h4>Chi nhánh Đà Nẵng</h4>
+                        <ul>
+                            <li>34 Âu Cơ, Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng,Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng</li>
+                            <li>Điện thoại: 0966 581 498</li>
+                            <li>Gmail: tranhuutrung1408@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 block-footer">
+                        <h4>Chi nhánh Tp Hồ Chí Minh</h4>
+                        <ul>
+                            <li>34 Âu Cơ, Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng,Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng</li>
+                            <li>Điện thoại: 0966 581 498</li>
+                            <li>Gmail: tranhuutrung1408@gmail.com</li>
+                        </ul>            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        Copyright @2018 - All rights reserved
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </footer>
     <!-- Jquery bootstrap template depend on it -->
     <script src="assets/js/jquery-3.2.1.min.js"></script>

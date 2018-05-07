@@ -1,3 +1,12 @@
+.panel-footer>a>h4 {
+  color: #333333;
+}
+.panel-footer>a:hover, .panel-footer>a:focus{
+  text-decoration: none;
+}
+.panel-footer .add-to-cart{
+  color: brown;
+}
 header{
   border-bottom: none;
 }
