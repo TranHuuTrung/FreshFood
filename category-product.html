@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="assets/css/fontcss.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/category.css">
+    <link rel="stylesheet" href="assets/css/detail-product.css">
 </head>
 <body>
-    <header class="container-fluid nav-header">
+     <header class="container-fluid nav-header">
+     <!-- includes header by js from snippets/header -->
         <div class="container">
             <nav role="navigation" class="row">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -24,7 +26,7 @@
                         <span class="sr-only">Toggle navigation</span>
                         <span class="fa fa-navicon "></span>
                     </button>
-                    <a href="/">
+                    <a href="./">
                     <img class="img-responsive" src="./assets/images/logo.png" alt="FreshFood">
                     </a>
                 </div>
@@ -32,13 +34,13 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-header-collapse col-md-8 col-md-push-2">
                     <ul class="nav navbar-nav main-menu-header">
-                        <li class="active"><a href="#">TRANG CHỦ</a></li>
-                        <li><a href="#">THỊT TƯƠI</a></li>
-                        <li><a href="#">SAU SẠCH</a></li>
-                        <li><a href="#">QUẢ NGỌT</a></li>
-                        <li><a href="#">CẨM NANG</a></li>
-                        <li><a href="#">LIÊN HỆ</a></li>
-                        <li><a href="#">THANH TOÁN</a></li>
+                        <li class="active"><a href="./">TRANG CHỦ</a></li>
+                        <li><a href="./category-product.html">THỊT TƯƠI</a></li>
+                        <li><a href="./category-product.html">SAU SẠCH</a></li>
+                        <li><a href="./category-product.html">QUẢ NGỌT</a></li>
+                        <li><a href="./category-product.html">CẨM NANG</a></li>
+                        <li><a href="./category-product.html">LIÊN HỆ</a></li>
+                        <li><a href="./category-product.html">THANH TOÁN</a></li>
                         <li class="cart">
                             <a href="#">
                                 <i class="fa fa-cart-plus"></i>
@@ -47,13 +49,14 @@
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
-            </nav>   
+            </nav>
+            
         </div>
     </header>
-    <div class="view-img-header">
+   <div class="view-img-header">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12 col-sm-push-4 col-sm-5 col-md-4 col-md-push-4 col-lg-4 bcrumb">
+            <div class="row flex-container">
+                <div class="bcrumb">
                     <ol>
                         <li><i class="fa fa-home"></i><a href="./">Trang chủ </a><i class="fa fa-angle-right"></i></li>
                         <li class="active">Thực phẩm</li>

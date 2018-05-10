@@ -61,6 +61,17 @@ header{
       margin-bottom: 15px;
     }
   }
+  @media (max-width: 1199px) and (min-width: 768px){
+    /* .navbar-header-collapse {
+      margin-bottom: 20px;
+    } */
+    .navbar-header-collapse ul li {
+      margin-bottom: 20px;
+    }
+    .main-menu-header {
+      margin-top: 0px;
+    }
+  }
   .cart {
     display: inline-block;
     margin-top: -6px;
@@ -90,11 +101,15 @@ header{
     position: relative;
     margin-bottom: 15px;
   }
-  .info {
+  .info-pos{
     position: absolute;
+  }
+  .info-pos a:hover, .info-pos a:focus{
+    text-decoration: none;
+  }
+  .info {
     border: 2px solid #fff;
     padding: 3px;
-    top: 90px;
   }
   .info>p{
     padding: 10px 20px;

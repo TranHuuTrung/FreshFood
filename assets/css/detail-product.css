@@ -1,3 +1,20 @@
+/* Flex */
+.flex-container {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+/* .view-img-header .container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+} */
+@media (max-width: 500px){
+  .view-img-header img{
+    max-height: 130px;
+  }
+  
+}
 .head{
   margin-bottom: 15px;
 }
