@@ -1,0 +1,21 @@
+/* chinh sua lai hover phan trang */
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+  color: white;
+  background-color: #c50808;
+  border-color: #c50808;
+}
+.list-news-item{
+  margin-bottom: 40px;
+}
+.news-item{
+  margin-bottom: 20px;
+}
+/* .news-item img{
+  margin: 0px auto;
+} */
+
+@media screen and (min-width: 768px){
+  .highlight-item-news h4{
+    margin-top: 0px;
+  }
+}

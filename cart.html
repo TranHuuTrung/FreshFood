@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fresh Food</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/fontcss.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/category.css">
+    <link rel="stylesheet" href="assets/css/category-news.css">
+    <link rel="stylesheet" href="assets/css/detail-product.css">
+    <link rel="stylesheet" href="assets/css/detail-news.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body>
+    <header class="container-fluid nav-header">
+     <!-- includes header by js from snippets/header -->
+        <div class="container">
+            <nav role="navigation" class="row">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header col-md-2">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-header-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-navicon "></span>
+                    </button>
+                    <a href="./">
+                    <img class="img-responsive" src="./assets/images/logo.png" alt="FreshFood">
+                    </a>
+                </div>
+            
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-header-collapse col-md-8 col-md-push-2">
+                    <ul class="nav navbar-nav main-menu-header text-uppercase">
+                        <li class="active"><a href="./">Trang chủ</a></li>
+                        <li><a href="./category-product.html">Thịt tươi</a></li>
+                        <li><a href="./category-product.html">Rau sạch</a></li>
+                        <li><a href="./category-product.html">Quả ngọt</a></li>
+                        <li><a href="./category-news.html">Cẩm nang</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                        <li><a href="./cart.html">Thanh toán</a></li>
+                        <li class="cart">
+                            <a href="./cart.html">
+                                <i class="fa fa-cart-plus"></i>
+                                <span class="badge cart-number">5</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+            
+        </div>
+    </header>
+    <div class="view-img-header">
+        <div class="container-fluid">
+            <div class="row flex-container">
+                <div class="bcrumb">
+                    <ol>
+                        <li><i class="fa fa-home"></i><a href="./">Trang chủ </a><i class="fa fa-angle-right"></i></li>
+                        <li class="active">Giỏ hàng</li>
+                    </ol>
+                </div>
+                <img src="./assets/images/breadcrumb.png" alt="" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <div class="content-detail container">
+      <div class="row bangchitietgiohang">
+          <div class="table-responsive">
+              <table class="table table-hover table-cart table-bordered text-center">
+                  <thead>
+                      <tr>
+                          <th>Mã sản phẩm</th>
+                          <th>Ảnh</th>
+                          <th>Tên sản phẩm</th>
+                          <th>Số lượng</th>
+                          <th>Giá </th>
+                          <th>Tổng</th>
+                          <th>Thao tác</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>Fis1022A</td>
+                        <td>
+                            <img src="./assets/images/detail-info.png" alt="" class="img-responsive img-thumbnail">
+                        </td>
+                        <td>Cá hồi Bắc Âu</td>
+                        <td>          
+                            <input class="quantity text-center" type="text" name="" value="1" required="required">
+                        Kg
+                        </td>
+                        <td>250.000đ</td>
+                        <td>250.000đ</td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-danger">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Fis1022A</td>
+                        <td>
+                            <img src="./assets/images/detail-info1.jpg" alt="" class="img-responsive img-thumbnail">
+                        </td>
+                        <td>Cá hồi Bắc Âu</td>
+                        <td>          
+                            <input class="quantity text-center" type="text" name="" value="1" required="required">
+                        Kg
+                        </td>
+                        <td>250.000đ</td>
+                        <td>250.000đ</td>
+                        <td>
+                             <button type="button" class="btn btn-sm btn-danger">Xóa</button>
+                        </td>
+                    </tr>
+                    <!-- tong tien -->
+                    <tr class="total-cart">
+                        <td colspan="7">
+                            <div>
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left">
+                                    <p class="total-price">
+                                            Tổng : 500.000 đ
+                                    </p>
+                                </div>
+                                
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                    <button type="button" class="btn btn-info">Cập nhật giỏ hàng</button>
+                                    <button type="button" class="btn btn-danger">Xóa giỏ hàng</button>
+                                    <button type="button" class="btn btn-success">Đặt mua & thanh toán</button>
+                                </div>
+                            </div>         
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>        
+      </div>
+      <div class="row datmua">
+          <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6">
+              <div class="row">
+                <form action="./" method="POST" role="form">
+                    <legend><h4>Đặt hàng và thanh toán</h4></legend>
+                    <div class="form-group">
+                        <label for="">Họ tên</label>
+                        <input type="text" class="form-control" id="" placeholder="Ví dụ: Trần Hữu Trung">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" id="" placeholder="Ví dụ: tranhuutrung@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Số điện thoại</label>
+                        <input type="text" class="form-control" id="" placeholder="Ví dụ: 0966581498">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Địa chỉ</label>
+                        <input type="text" class="form-control" id="" placeholder="Ví dụ: K34/16 Âu Cơ - Hòa Khánh Bắc -Liên Chiểu - TP.Đà Nẵng">
+                    </div>
+                    <button type="submit" class="btn btn-success">Đặt mua</button>
+                </form>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+    <footer class="footer">
+        <div class="top-footer container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 block-footer">
+                        <h4>Trụ sở chính:</h4>
+                        <ul>
+                            <li>34 Âu Cơ, Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng,Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng</li>
+                            <li>Điện thoại: 0966 581 498</li>
+                            <li>Gmail: tranhuutrung1408@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 block-footer">
+                        <h4>Chi nhánh Đà Nẵng</h4>
+                        <ul>
+                            <li>34 Âu Cơ, Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng,Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng</li>
+                            <li>Điện thoại: 0966 581 498</li>
+                            <li>Gmail: tranhuutrung1408@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 block-footer">
+                        <h4>Chi nhánh Tp Hồ Chí Minh</h4>
+                        <ul>
+                            <li>34 Âu Cơ, Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng,Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng</li>
+                            <li>Điện thoại: 0966 581 498</li>
+                            <li>Gmail: tranhuutrung1408@gmail.com</li>
+                        </ul>            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        Copyright @2018 - All rights reserved
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- Jquery bootstrap template depend on it -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

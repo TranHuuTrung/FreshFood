@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    // $("#logo").mouseover( function(){
+    //     alert("Clicked");
+    //     var url = window.location.href;
+    //     window.location = url;
+    //   });
+    // });
     // var headerUrl        = "./snippets/header.html";
     // var sliderUrl        = "./snippets/slider.html";
     // var categoryUrl      = "./snippets/category.html";

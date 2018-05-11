@@ -1,0 +1,30 @@
+.bangchitietgiohang{
+  margin-bottom: 30px;
+}
+.datmua{
+  margin-bottom: 40px;
+}
+.table-cart td{
+  height:120px;
+}
+.table-cart th{
+  text-align: center;
+}
+.total-cart td{
+  height: 60px;
+}
+.table>tbody>tr>td{
+  vertical-align: middle;
+}
+.table-cart img.img-thumbnail {
+  max-width: 110px;
+  min-width: 90px;
+  height: 100px;
+}
+.quantity {
+  width: 50px;
+}
+p.total-price{
+  margin: 0;
+  line-height: 34px;
+}
