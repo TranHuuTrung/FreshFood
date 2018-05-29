@@ -19,6 +19,15 @@
     <link rel="stylesheet" href="assets/css/cart.css">
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.0';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <header class="container-fluid nav-header">
      <!-- includes header by js from snippets/header -->
         <div class="container">
@@ -161,128 +170,18 @@
            </div>
            <img src="./assets/images/ads.png" alt="" width="100%" class="img-responsive ads-img" >
         </div>
+        <!-- phan commnet -->
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 comment">
-            <div class="social">
-              <button type="button" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-thumbs-up"></i> Thích 0</button>
-              <button type="button" class="btn btn-xs btn-primary"><i class="fa fa-twitter"></i> Tweet</button>
-              <button type="button" class="btn btn-xs btn-default"><i class="fa fa-google-plus"></i></button>     
-            </div>
-            <div class="row">
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                  <h5>0 Bình luận</h5>
-              </div>
-              <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 filter-comment">
-                  <p>Sắp xếp theo
-                    <div class="input-group">
-                        <select class="form-control" id="sel1">
-                            <option value="">Mới nhất</option>
-                            <option value="">Cũ hơn</option>
-                        </select>
-                    </div>
-                </p>
-              </div>
-              
-            </div>
-            <hr>
-            <!-- <div class="user-comment">
-              <img src="./assets/images/user.jpg" alt="" class="img-responsive">
-              <div>
-                <textarea class="form-control" rows="3" required="required"></textarea>
-              </div>
-            </div> -->
+            <div class="fb-like" data-href="https://tranhuutrung.github.io/FreshFood/category-news.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+            <!-- <div class="fb-share-button" data-href="https://www.facebook.com/tranhuutrung.14081997" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Ftranhuutrung.14081997&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Chia sẻ</a></div> -->
+            <div class="fb-save" data-uri="https://tranhuutrung.github.io/FreshFood/" data-size="small"></div>
+            
             <!-- comment -->
-            <div class="user-comment">
-                <ul class="media-list">
-                    <li class="media">
-                        <div class="media-left">
-                            <a href="">
-                                <img src="./assets/images/user.jpg" alt="" >
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                Binh luan 1
-                            </h4>
-                            <p>Anh trung dep tai qua Anh trung dep tai qua Anh trung dep tai quaAnh trung dep tai qua Anh trung dep tai qua
-                                    Anh trung dep tai qua!!</p>
-                            <!-- media level 2 -->
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="">
-                                        <img src="./assets/images/user.jpg" alt="" >
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">
-                                        Binh luan 1
-                                    </h4>
-                                    <p>Anh trung dep tai qua!!</p>
-                                    <!-- media level 3 -->
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <a href="">
-                                                    <img src="./assets/images/user.jpg" alt="" >
-                                            </a>
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 class="media-heading">
-                                                Binh luan 1
-                                            </h4>
-                                            <p>Anh trung dep tai qua!!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <br>
-                    <li class="media">
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                Binh luan 1
-                            </h4>
-                            <p>Anh trung dep tai qua!!</p>
-                        </div>
-                        <div class="media-right">
-                            <a href="">
-                                <img src="./assets/images/ads.png" alt="" >
-                            </a>
-                        </div>
-                    </li>
-                    <br>
-                    <li class="media">
-                        <div class="media-left">
-                            <a href="">
-                                <img src="./assets/images/user.jpg" alt="" >
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                Binh luan 1
-                            </h4>
-                            <p>Anh trung dep tai qua Anh trung dep tai qua Anh trung dep tai quaAnh trung dep tai qua Anh trung dep tai qua
-                                    Anh trung dep tai qua!!</p>
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="">
-                                        <img src="./assets/images/user.jpg" alt="" >
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="media-heading">
-                                        Binh luan 1
-                                    </h4>
-                                    <!-- <p>Anh trung dep tai qua Anh trung dep tai qua Anh trung dep tai quaAnh trung dep tai qua Anh trung dep tai qua
-                                            Anh trung dep tai qua!!</p> -->
-                                    <textarea class="form-control" rows="1" required="required" placeholder="Thêm bình luận"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+            <div class="fb-comments" 
+                data-href="https://www.facebook.com/tranhuutrung.14081997" 
+                data-width="100%" 
+                data-numposts="2">
             </div>
-            <hr>
-            <a href=""><i class="fa fa-facebook-official"></i> Facebook Comments Plugin</a>
         </div>
     </div>
       
@@ -308,12 +207,17 @@
                         </ul>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 block-footer">
-                        <h4>Chi nhánh Tp Hồ Chí Minh</h4>
-                        <ul>
-                            <li>34 Âu Cơ, Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng,Hòa Khánh Bắc,Liên Chiểu, TP Đà Nẵng</li>
-                            <li>Điện thoại: 0966 581 498</li>
-                            <li>Gmail: tranhuutrung1408@gmail.com</li>
-                        </ul>            
+                        <h4>Fanpages của chúng tôi</h4>
+                        <div class="fb-page" 
+                            data-href="https://www.facebook.com/H&#x1eef;u-Trung-1713923102223109/" 
+                            data-small-header="false" 
+                            data-adapt-container-width="true" 
+                            data-hide-cover="false" 
+                            data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/H&#x1eef;u-Trung-1713923102223109/" class="fb-xfbml-parse-ignore">
+                                <a href="https://www.facebook.com/H&#x1eef;u-Trung-1713923102223109/">Hữu Trung</a>
+                            </blockquote>
+                        </div>             
                     </div>
                 </div>
             </div>
